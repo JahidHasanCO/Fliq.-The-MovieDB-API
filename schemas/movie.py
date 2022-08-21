@@ -1,9 +1,17 @@
 def movieEntity(item) -> dict:
     return {
         "id": str(item["_id"]),
-        "name": item["name"],
-        "email": item["email"],
-        "password": item["password"]
+        "adult": item["adult"],
+        "image_link": item["image_link"],
+        "originalLanguage": item["originalLanguage"],
+        "originalTitle": item["originalTitle"],
+        "overview": item["overview"],
+        "popularity": str(item["popularity"]),
+        "releaseDate": item["releaseDate"],
+        "title": item["title"],
+        "video": str(item["video"]),
+        "voteAverage": str(item["voteAverage"]),
+        "voteCount": str(item["voteCount"])
     }
 
 

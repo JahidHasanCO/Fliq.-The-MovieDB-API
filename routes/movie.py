@@ -4,15 +4,15 @@ from models.movie import Movie
 from config.db import db
 from schemas.movie import movieEntity, moviesEntity
 
-movie = APIRouter()
+appMovieRouter = APIRouter()
 
 
-@movie.get('/movies')
-async def find_all_users():
-    return moviesEntity(db.user.find())
+@appMovieRouter.get('/movies')
+async def movies():
+    return moviesEntity(db.movies.find())
 
 
-@movie.post('/movie')
-async def create_user(movie: Movie):
-    db.movie.insert_one(dict(movie))
-    return moviesEntity(db.user.find())
+@appMovieRouter.post('/movie')
+async def movie(movie: Movie):
+    db.movies.insert_one(dict(movie))
+    return {"msg": "Successfully movie added."}
