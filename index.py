@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from routes.user import user
+from routes.movie import movie
 
 app = FastAPI()
-app.include_router(user)
+app.include_router(movie)

@@ -1,4 +1,4 @@
-def userEntity(item) -> dict:
+def movieEntity(item) -> dict:
     return {
         "id": str(item["_id"]),
         "name": item["name"],
@@ -7,5 +7,5 @@ def userEntity(item) -> dict:
     }
 
 
-def usersEntity(entity) -> list:
-    return [userEntity(item) for item in entity]
+def moviesEntity(entity) -> list:
+    return [movieEntity(item) for item in entity]

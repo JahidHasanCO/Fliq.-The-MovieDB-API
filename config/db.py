@@ -1,8 +1,5 @@
 from pymongo import MongoClient
 
-
 client = MongoClient(
-    "mongodb+srv://user:user.123.p@socialmediacluster.elxk9mp.mongodb.net/?retryWrites=true&w=majority")
-db = client.API
-
-#db = connection[userData]
+    "mongodb+srv://admin:aLr3MfCjfwsoc17A@fliq.efxw0yx.mongodb.net/?retryWrites=true&w=majority")
+db = client.fliq
