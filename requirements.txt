@@ -45,3 +45,4 @@ urllib3==1.26.11
 uvicorn==0.17.6
 watchgod==0.8.2
 websockets==10.3
+wheel 
