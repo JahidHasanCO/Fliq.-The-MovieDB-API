@@ -1,3 +1,4 @@
-# Fliq.-The-MovieDB-API
+# Fliq.-The MovieDB API
 
-pip freeze > requirements.txt
+![Banner](https://github.com/JahidHasanCO/Fliq.-The-MovieDB-API/blob/master/ART/banner.png)
+
