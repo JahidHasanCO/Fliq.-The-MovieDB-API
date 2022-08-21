@@ -1,3 +1,8 @@
+
+
+from array import array
+
+
 def movieEntity(item) -> dict:
     return {
         "id": str(item["_id"]),
@@ -6,12 +11,12 @@ def movieEntity(item) -> dict:
         "originalLanguage": item["originalLanguage"],
         "originalTitle": item["originalTitle"],
         "overview": item["overview"],
-        "popularity": str(item["popularity"]),
+        "popularity": item["popularity"],
         "releaseDate": item["releaseDate"],
         "title": item["title"],
-        "video": str(item["video"]),
-        "voteAverage": str(item["voteAverage"]),
-        "voteCount": str(item["voteCount"])
+        "video": item["video"],
+        "voteAverage": item["voteAverage"],
+        "voteCount": item["voteCount"]
     }
 
 

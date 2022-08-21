@@ -15,4 +15,7 @@ async def movies():
 @appMovieRouter.post('/movie')
 async def movie(movie: Movie):
     db.movies.insert_one(dict(movie))
-    return {"msg": "Successfully movie added."}
+    return {
+        "msg": "Successfully movie added.",
+        "Status Code": 201
+    }
