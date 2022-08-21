@@ -7,7 +7,7 @@ def movieEntity(item) -> dict:
     return {
         "id": str(item["_id"]),
         "adult": item["adult"],
-        "image_link": item["image_link"],
+        "image_links": item["image_links"],
         "originalLanguage": item["originalLanguage"],
         "originalTitle": item["originalTitle"],
         "overview": item["overview"],
